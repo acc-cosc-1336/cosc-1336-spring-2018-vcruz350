@@ -1,7 +1,7 @@
 
 #determine number of hours
 def get_hours_since_midnight(seconds):
-    total_hours = 'Hours:' (seconds // 3600)
+    total_hours = ('Hours:' (seconds // 3600))
     return total_hours
 
 #determine number of minutes
