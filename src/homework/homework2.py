@@ -26,7 +26,7 @@ def get_time(hour, minutes, seconds, time_type, meridiem='AM'):
         return 'Invalid hours(range 1-12)'
     if time_type == 24 and (hour < 0 or hour > 23):
         return 'Invalid hours(range 0-23)'
-    if time_type != 12 or time_type != 24:
+    if time_type != 12 and time_type != 24:
         return 'Invalid time type(12 or 24hr only)'
     if minutes < 0 or minutes > 59:
         return 'Invalid minutes (range 0-59)'
