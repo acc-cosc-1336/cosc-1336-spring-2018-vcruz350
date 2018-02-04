@@ -92,6 +92,6 @@ def list_of_primes(n):
     primes = ''
     for num in range (1,n):
         if is_prime(num) == True:
-            primes += ',' + str(primes)
+            primes += str(num) + ','
     return primes
 
