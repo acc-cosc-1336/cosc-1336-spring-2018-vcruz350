@@ -66,15 +66,15 @@ def is_prime(n):
     '''
     current_number = 2
     if n == 1:
-        is_prime = 'False'
+        is_prime = False
     elif n == 2:
-        is_prime = 'True'
+        is_prime = True
     else:
         for num in range(2,n+1): 
             if n % current_number == 0:
-                is_prime = 'False'
+                is_prime = False
             else:
-                is_prime = 'True'
+                is_prime = True
     return is_prime
 
 def list_of_primes(n):
