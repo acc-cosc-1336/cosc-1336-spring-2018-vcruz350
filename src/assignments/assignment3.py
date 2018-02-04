@@ -90,11 +90,8 @@ def list_of_primes(n):
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
     primes = ''
-    current_number = 1
-    for num in range (1,n+1):
-        if n % current_number == 0:
-
-            primes = ',' + str(primes)
-
+    for num in range (1,n):
+        if is_prime(num) == True:
+            primes += ',' + str(primes)
     return primes
 
