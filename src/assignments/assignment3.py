@@ -65,15 +65,14 @@ def is_prime(n):
     DON'T FORGET RETURN STATEMENT AT THE END OF THE FUNCTION
     '''
     if n == 1:
-        is_prime = False
+        return False
     elif n == 2:
-        is_prime = True
+        return True
     else:
         for num in range(2,n): 
             if n % num == 0:
-                is_prime = False
- 
-    return is_prime
+                return False
+        return True
 
 def list_of_primes(n):
     '''
