@@ -70,8 +70,8 @@ def is_prime(n):
     elif n == 2:
         is_prime = True
     else:
-        for num in range(2,n+1): 
-            if n % current_number == 0:
+        for num in range(2,n): 
+            if n % num == 0:
                 is_prime = False
             else:
                 is_prime = True
