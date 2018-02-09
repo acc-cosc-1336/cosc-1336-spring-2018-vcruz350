@@ -1,7 +1,7 @@
 import unittest
 
-from assignment4 import sample_function
-from assignment4 import factorial
+from src.assignments.assignment4 import sample_function
+from src.assignments.assignment4 import factorial
 
 class Test_Assign4(unittest.TestCase):
 
@@ -34,6 +34,6 @@ class Test_Assign4(unittest.TestCase):
 
 
 #remove the pound sign at the beginning of the next statement to run tests locally.
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
 #add the pound sign back before uploading to Github
 
