@@ -59,7 +59,9 @@ def main1():
     '''
     #write your code here
     number = int(input('Please enter a number: '))
-    result_odd = sum_odd_numbers(number)
-    print(result_odd)
-    list_even = list_of_even_numbers(number)
-    print(list_even)
+    
+    for i in range(1, number+1):
+        result_odd = sum_odd_numbers(i)
+        print(result_odd)
+        list_even = list_of_even_numbers(i)
+        print(list_even)
