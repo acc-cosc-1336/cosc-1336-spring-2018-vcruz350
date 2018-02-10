@@ -23,9 +23,12 @@ def list_of_even_numbers(num):
     '''
     even_numbers = ''
     #write your code starting here; you'll need to concatenate evens to even_numbers
-    for number in range(1, num+1):
-        if number % 2 == 0:
-            even_numbers += str(number) + ','
+    y = 1
+    while y <= num:
+        if y%2 == 0:
+            even_numbers += (str(y)+',')        
+        y+=1    
+    
     return even_numbers
 
 def main1():
