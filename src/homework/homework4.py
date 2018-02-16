@@ -64,5 +64,5 @@ def get_grade_point_average(credit_hours, grade_points):
     :return: The grade point average for a student
     WRITE YOUR CODE AFTER THE THREE QUOTES BELOW
     '''
-    gpa = grade_points / credit_points
+    gpa = grade_points / credit_hours
     return gpa
