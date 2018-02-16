@@ -24,7 +24,7 @@ class Test_Assign5(unittest.TestCase):
     def test_rdb_w_value_86(self):
         self.assertEqual('01010110', recursive_decimal_binary(86,7))
 
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
 
 
     #write test cases with arguments 85 and 63 for recursive_decimal_binary function
