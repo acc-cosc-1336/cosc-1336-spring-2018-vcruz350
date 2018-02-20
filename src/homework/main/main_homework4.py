@@ -21,24 +21,24 @@ def main():
     gpa2 = 0
 
 #number of classes
-    for q in range(1,number_of_students+1):
-        classes = int(input('How many classes did the students take... ' +str(q)))
-        credit = 0
-        gpa2 = 0
+    classes = int(input('How many classes did the students take... '))
+    credit = 0
+    gpa2 = 0
 
 #enter the letter grade
-    for v in range(1, classes+1):
-        entered_grade = int(input('Please enter letter grade... ' +str(v) + ':' ))
-        while valid_letter_grade(str(entered_grade)) != True:
-            entered_grade = input('Error. Enter valid letter grade: (A,B,C,D, or F):     ')
-#calculates gpa
-        entered_grade = get_credit_points(entered_grade)
-        credit_hours = int(input('How many credits was the class... ' + str(v)))
-        credit += credit_hours
-        grade_points = get_grade_points(credit_hours,entered_grade)
-        gpa2 += grade_points
-        gpa = get_grade_point_average(credit,gpa2)
-    print('Student #' +str(q) + 's GPA is: ' + "%.01f" % gpa)                                                      
+    for student in range(number_of_students):
+        for course in range(1, classes+1):
+            entered_grade = input('Please enter letter grade... ' +str(course) + ':' )
+            while valid_letter_grade(str(entered_grade)) != True:
+                entered_grade = input('Error. Enter valid letter grade: (A,B,C,D, or F):     ')
+    #calculates gpa
+            entered_grade = get_credit_points(entered_grade)
+            credit_hours = int(input('How many credits was the class... ' + str(course)))
+            credit += credit_hours
+            grade_points = get_grade_points(credit_hours,entered_grade)
+            gpa2 += grade_points
+            gpa = get_grade_point_average(credit,gpa2)
+        print('Student #' +str(student) + 's GPA is: ' + "%.2f" % gpa)
 #CALL THE MAIN FUNCTION
 main()
 
