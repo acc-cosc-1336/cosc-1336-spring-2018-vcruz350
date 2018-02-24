@@ -18,17 +18,14 @@ def get_count_A_C_G_and_T_in_string(dna_string):
             count_A += 1
 
     #count number of C's
-    for ch2 in dna_string:
         if ch2 =='C' or ch2 == 'c':
             count_C += 1
 
     #count number of G's
-    for ch3 in dna_string:
         if ch3 == 'G' or ch3 == 'g':
             count_G += 1
 
     #count number of T's
-    for ch4 in dna_string:
         if ch4 == 'T' or ch4 == 't':
             count_T += 1
             
