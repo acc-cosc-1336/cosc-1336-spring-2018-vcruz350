@@ -35,4 +35,4 @@ class Test_Assign8(unittest.TestCase):
         #create the assert equal code
         self.assertEqual(306, invoice.get_invoice_total())
 
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
