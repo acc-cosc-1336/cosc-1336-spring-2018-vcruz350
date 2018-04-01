@@ -48,4 +48,4 @@ class TestHomework7(unittest.TestCase):
     '''
 
     
-unittest.main(verbosity=2)
+#unittest.main(verbosity=2)
