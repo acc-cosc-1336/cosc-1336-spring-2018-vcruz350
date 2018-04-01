@@ -10,6 +10,7 @@ class Test_Assign7(unittest.TestCase):
     #create a test for the sum_list_values function with list elements:
     # bill 23 16 19 22
     def test_sum_w_23_16_19_22(self):
-        self.assertEqual((80), sum_list_values('bill', 23, 16, 19, 22))
+        test_list = ['bill', 23, 16, 19, 22]
+        self.assertEqual(80, sum_list_values(test_list))
 
 #unittest.main(verbosity=2)
