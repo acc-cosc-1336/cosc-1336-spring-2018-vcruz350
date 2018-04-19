@@ -11,5 +11,5 @@ class TestHomework9(unittest.TestCase):
         '''
         Write a test case to ensure that the Die class only rolls values from 1 to 6
         '''
-if __name__ == '__main__':
-    unittest.main()
+#if __name__ == '__main__':
+#    unittest.main()
