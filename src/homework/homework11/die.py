@@ -10,7 +10,7 @@ Defina a roll method that virtually rolls a die and returns the value.
 class Die:
 
     #HOMEWORK12: modify the constructor parameter list to include sides
-    def __init__(self):
+    def __init__(self, sides):
         self.sides = sides #HOMEWORK12: modify this statement to use the sides parameter(remove the 6)
         self.value = 0
 
