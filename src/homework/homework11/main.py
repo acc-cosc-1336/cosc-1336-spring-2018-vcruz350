@@ -12,7 +12,7 @@ die8 = Die8()
 
 #ASSIGNMENT12: pass the Die6 and Die8 instance object variables to the Player instantiation below as parameters after
 #the game_log parameter
-Player(game_log).roll_doubles()
+Player(game_log, die6, die8).roll_doubles()
 
 game_log.display_log()
 
